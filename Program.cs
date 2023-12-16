@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ExoContext, ExoContext>();
 builder.Services.AddControllers();
+uilder.Services.AddTransient<UsuarioRepository,
+UsuarioRepository>();
 
 var app = builder.Build();
 
